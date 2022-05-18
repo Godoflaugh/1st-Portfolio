@@ -1,0 +1,211 @@
+*{
+  box-sizing: border-box;
+}
+header{
+  /* padding: 10px; */
+  margin: 0;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  border-top: 8px solid white;
+  border-bottom: 8px solid white;
+  background-color: rgb(26, 62, 219);
+  z-index: 100;
+}
+
+
+a{
+  text-decoration: none;
+font-weight: bold;
+color: white;
+}
+
+header h1.page-name{
+  font-size: 40px;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px;
+  text-align: left;
+  width: 30%;
+}
+
+h2{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.page-links ol {
+  display: inline;
+  text-align: right;
+}
+
+body{
+font-size: 16px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: rgb(63, 66, 68);
+color: white;
+line-height: 1.5;
+}
+
+header nav.pagelinks{
+text-align: right;
+
+}
+
+/* this creates the box for the column to live in */
+.row{
+  display: flex;
+  width: 100%;
+  /* position: absolute; */
+  top: 200px;
+  border: 5px dashed rgb(26, 62, 219);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: black;
+}
+
+.contact-row{
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 60px;
+  border: 5px dashed rgb(26, 62, 219);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: black;
+  /* width: 1191px; */
+}
+.bottom-row{
+  display: flex;
+  width: 100%;
+  height: 45%;
+  position: relative;
+  justify-content: center;
+  top: 30px;
+  border: 5px dashed rgb(26, 62, 219);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: black;
+  /* width: 1191px; */
+}
+
+.card-box{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  /* width: 90%; */
+  padding: 5px;
+  color: white;
+  border: 5px solid rgb(26, 62, 219);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+
+.bottom-row .card-box p{
+  justify-content: center;
+}
+
+
+.column-aboutme{
+  flex: auto;
+  padding: 10px;
+  height: auto;
+  background-color: gray;
+  text-align: left;
+  position: top 225px;
+  
+}
+
+.column-aboutmebottom{
+  flex: auto;
+  padding: 10px;
+  height: auto;
+  background-color: gray;
+  text-align: right;
+  position: top 225px;
+  flex-wrap: wrap;
+}
+
+.column-contact{
+  flex: auto;
+  padding: 10px;
+  height: auto;
+  background-color: gray;
+  text-align: left;
+  position: top 225px;
+  flex-wrap: wrap;
+}
+
+
+/* The two pieces of code below are the titles boxes for each section */
+.column-aboutme h2{
+  text-align: center;
+  border: 5px solid silver;
+} 
+
+.column-aboutmebottom h2{
+  text-align: center;
+  border: 5px solid silver ;
+  /* position: relative; left: 520px;  */
+  
+}
+
+.contact-row .column-contact h2{
+  text-align: center;
+  border: 5px solid silver ;
+   
+
+}
+
+
+.bottom-row .column-aboutmebottom .card-box img{  
+  justify-content: flex-end;
+}
+/* This code below will left align the content and create a silver border around the p text */
+.column-aboutme p{
+  text-align: left;
+  border: 5px solid silver;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.column-aboutmebottom p{
+  text-align: left;
+  border: 5px solid silver;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.column-contact p{
+  text-align: center;
+  border: 5px solid silver;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#imagelink {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url( https://godoflaugh.github.io/01-mini-project/) no-repeat;
+  text-indent: -9999px;
+}
